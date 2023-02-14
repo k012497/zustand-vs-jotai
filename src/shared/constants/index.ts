@@ -15,3 +15,8 @@ export const ANTD_MENU_ITEMS = [
 ];
 
 export const KEY_ENTER = 'Enter';
+
+export interface TodoItem {
+  checked: boolean;
+  todo: string;
+}

@@ -22,7 +22,7 @@ export default function JotaiTodoContainer() {
 
   return (
     <div>
-      <Title level={1}>✅ Jōtai</Title>
+      <Title level={1}>🇯🇵 Jōtai</Title>
       <Todo list={todoList} onSubmit={addTodo} onCheck={checkTodo} />
     </div>
   );

@@ -1,8 +1,7 @@
 import React, { ChangeEventHandler, KeyboardEvent, useState } from 'react';
 import { Input as InputComponent } from 'antd';
 
-import { TodoItem } from '../../shared/store/jotai';
-import { KEY_ENTER } from '../../shared/constants';
+import { KEY_ENTER, TodoItem } from '../../shared/constants';
 
 interface InputProps {
   list: Array<TodoItem>;
