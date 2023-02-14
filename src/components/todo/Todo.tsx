@@ -38,13 +38,16 @@ export default function Input({ list, onSubmit, onCheck }: InputProps) {
 
   return (
     <div>
-      <InputComponent placeholder="todo" value={text} onKeyDown={onKeyDown} onChange={onChange} />
+      <InputComponent
+        style={{ marginBottom: '1rem' }}
+        placeholder="오늘의 할 일은 뭔가요?"
+        value={text}
+        onKeyDown={onKeyDown}
+        onChange={onChange}
+      />
       {list.map((item, index) => (
-        <div
-          key={index}
-          style={{ textDecoration: item.checked ? 'line-through' : 'none' }}
-          onClick={onTodoItemClick(index)}
-        >
+        <div key={index} style={{ textDecoration: item.checked ? 'line-through' : 'none' }}>
+          <input type="checkbox" checked={item.checked} onChange={onTodoItemClick(index)} />
           {item.todo}
         </div>
       ))}
