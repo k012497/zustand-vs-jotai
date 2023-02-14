@@ -1,0 +1,5 @@
+@font-face {
+  font-family: 'MonoplexKRWide';
+  font-display: swap;
+  src: local('MonoplexKRWide-Light'), url('/assets/fonts/MonoplexKRWide-Light.ttf');
+}
